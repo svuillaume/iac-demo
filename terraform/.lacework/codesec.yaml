@@ -1,0 +1,5 @@
+default:
+    iac:
+        enabled: true
+    sca:
+        enabled: true
