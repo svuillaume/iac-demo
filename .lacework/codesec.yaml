@@ -1,5 +1,6 @@
 default:
     iac:
         enabled: true
-    sca:
-        enabled: true
+        scan:
+            autofix: true
+   
