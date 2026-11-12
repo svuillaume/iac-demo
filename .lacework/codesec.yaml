@@ -3,4 +3,3 @@ default:
         enabled: true
         scan:
             autofix: true
-   
