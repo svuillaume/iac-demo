@@ -29,7 +29,11 @@ resource "azurerm_storage_account" "demo" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
+  # Basic security
+  https_traffic_only_enabled      = true
+  min_tls_version                 = "TLS1_2"
   allow_nested_items_to_be_public = false
+  shared_access_key_enabled       = true
 }
 
 resource "azurerm_storage_container" "demo" {
